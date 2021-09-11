@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 
 
+description = "To get the latest earthquake in Indonesia from BMKG.go.id"
+
+
 def ekstraksi_data():
     """
     Tanggal: 02 September 2021
@@ -85,5 +88,6 @@ def tampilkan_data(result):
 
 
 if __name__ == "__main__":
+    print(f"Deskription package {description}")
     result = ekstraksi_data()
     tampilkan_data(result)
